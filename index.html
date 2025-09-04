@@ -1,0 +1,81 @@
+<body>
+  <div id="chooser" class="glass">
+    <h2>Configuration</h2>
+    <div>
+      <!--         <h4>Player choice (legacy):</h4>
+        <button id="playbot" onclick="playvsbot()">Bot</button>
+        <button id="playPlayer" onclick="play_vs_Player()">Player</button> -->
+
+      <label class="switch">Play with a friend?
+        <input type="checkbox" id="modechanger" onclick="updatechoice()" style="display:none;">
+        <span class="slider"></span>
+      </label>
+
+    </div>
+    <br>
+    <hr>
+    <br>
+    <button id="toggler" onclick="togglewallpaper()">Show walpapers</button>
+    <div id="bgchoice">
+      <br>
+
+      <h4>Background choice :</h4>
+
+      <h5>Windows:</h5>
+      <button onclick="setXP()">Windows XP <img class="chooser-img" src="https://www.wallpaperhub.app/_next/image?url=https%3A%2F%2Fcdn.wallpaperhub.app%2Fcloudcache%2Fb%2Fd%2F7%2F6%2F4%2Fb%2Fbd764bb25d49a05105060185774ba14cd2c846f7.jpg&w=4500&q=100" /></button>
+      <button onclick="setVista()">Windows Vista <img class="chooser-img" src="https://ia804604.us.archive.org/0/items/vistapaperredversion/img24.jpg" /></button>
+      <button onclick="setSeven()">Windows 7 <img class="chooser-img" src="https://ia904603.us.archive.org/10/items/Windows-wallcollection/1920x1200_%28Windows_7%29.jpg" /></button>
+      <button onclick="setEleven()">Windows 11 <img class="chooser-img" src="https://blogs.windows.com/wp-content/uploads/prod/sites/2/2021/10/Windows-11-Bloom-Screensaver-Dark-scaled.jpg" /></button>
+      <button onclick="setElevenCopilot()">Windows 11 (Copilot+) <img class="chooser-img" src="https://images3.alphacoders.com/136/1363355.jpeg" /></button>
+
+      <h5>macOS:</h5>
+      <button onclick="setSnowLeopard()">Snow Leopard <img class="chooser-img" src="https://512pixels.net/downloads/macos-wallpapers/10-6.png" /></button>
+
+      <button onclick="setLion()">Lion <img class="chooser-img" src="https://512pixels.net/downloads/macos-wallpapers/10-7.png" /></button>
+      <button onclick="setMountanLion()">Mountain Lion <img class="chooser-img" src="https://512pixels.net/downloads/macos-wallpapers/10-8.jpg" /></button>
+      <button onclick="setMavericks()">Mavericks <img class="chooser-img" src="https://512pixels.net/downloads/macos-wallpapers/10-9.jpg" /></button>
+      <br>
+      <br>
+
+      <button onclick="setMojaveDay()">Mojave Day <img class="chooser-img" src="https://512pixels.net/downloads/macos-wallpapers/10-14-Day.jpg" /></button>
+      <button onclick="setMojaveNight()">Mojave Night <img class="chooser-img" src="https://512pixels.net/downloads/macos-wallpapers/10-14-Night.jpg" /></button>
+
+      <button onclick="setCatalinaDay()">Catalina Day <img class="chooser-img" src="https://512pixels.net/downloads/macos-wallpapers/10-15-Day.jpg" /></button>
+      <button onclick="setCatalinaNight()">Catalina Night <img class="chooser-img" src="https://512pixels.net/downloads/macos-wallpapers/10-15-Night.jpg" /></button>
+
+      <hr>
+      <h5>Simple color:</h5>
+      <input id="colorpick" type="color" /> <button onclick='applycolor()'>Apply</button>
+    </div>
+
+  </div>
+  <main>
+    <div class="glass" id="container">
+      <div class="container-content" style="opacity:1;">
+        <h2>Player 1</h2>
+        <div>
+          <button onclick="rock()"> <img src="https://em-content.zobj.net/source/apple/271/rock_1faa8.png" alt="rock" /> </button>
+          <button onclick="paper()"> <img src="https://em-content.zobj.net/source/apple/391/page-facing-up_1f4c4.png" alt="paper" /> </button>
+          <button onclick="cuttythings()"> <img src="https://em-content.zobj.net/source/apple/325/scissors_2702-fe0f.png" alt="sissors" /> </button>
+        </div>
+
+        <br>
+
+        <div id="player2">
+          <h2>Player 2</h2>
+          <button onclick="botrock()"> <img src="https://em-content.zobj.net/source/apple/271/rock_1faa8.png" alt="rock" /> </button>
+          <button onclick="botpaper()"> <img src="https://em-content.zobj.net/source/apple/391/page-facing-up_1f4c4.png" alt="paper" /> </button>
+          <button onclick="botcuttythings()"> <img src="https://em-content.zobj.net/source/apple/325/scissors_2702-fe0f.png" alt="sissors" /> </button>
+          <!--sissors does NOT look like a real word to me so cutty things it is-->
+        </div>
+        <h3 id="result">Nobody has played yet!<br></h3>
+      </div>
+    </div>
+  </main>
+  <style>
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</body>
